@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen antialiased overflow-x-hidden bg-[#101010]",
+          "min-h-screen antialiased overflow-x-hidden bg-[#060606]",
           dmSans.className
         )}
       >

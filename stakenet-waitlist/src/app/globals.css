@@ -54,7 +54,7 @@
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: white white;
+  scrollbar-color: white #060606;
 }
 
 /* Chrome, Edge, and Safari */
@@ -64,71 +64,100 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: white;
+  background: #060606;
   border-radius: 5px;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: white;
+  background-color: #060606;
   border-radius: 20px;
 }
 
 /* Scrollbar End */
 
-/* Feature Cards */
-
-.main {
-  position: relative;
-  margin-top: 50vh;
+/* Initial state of the images */
+.image-reveal {
+  opacity: 1;
 }
 
-.cardContainer {
-  width: 80vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  top: 0px;
+/* Rotate animation for the left and right images */
+.rotate-left-top {
+  transform: rotate(30deg) translateX(-15%);
+  transition: transform 1s;
+}
+.rotate-left-bottom {
+  transform: rotate(-30deg) translateX(-15%);
+  transition: transform 1.5s;
+}
+.rotate-right-top {
+  transform: rotate(-30deg) translateX(15%);
+  transition: transform 1s;
+}
+.rotate-right-bottom {
+  transform: rotate(30deg) translateX(15%);
+  transition: transform 1.5s;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  top: -25%;
-  height: 600px;
-  border-radius: 40px;
-  transform-origin: top;
+/* Slide in animation for the middle image */
+.slide-right {
+  opacity: 1;
+  transform: translateX(20%);
+  transition: transform 1s ease;
 }
 
-.card .body {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
+.slide-left {
+  opacity: 1;
+  transform: translateX(-20%);
+  transition: transform 1s ease;
 }
 
-.card .body .description {
-  width: 40%;
-  position: relative;
-  top: 10%;
-  align-items: start;
+#float {
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
-.card .body .imageContainer {
-  position: relative;
-  width: 42%;
-  height: 100%;
-  overflow: hidden;
+.slide-hero-right {
+  opacity: 1;
+  transform: translateX(65%) translateY(15%);
+  transition: transform 1s ease;
 }
 
-.card .body .imageContainer .inner {
-  width: 100%;
-  height: 100%;
+.slide-hero-up {
+  opacity: 1;
+  transform: translateY(23%);
+  transition: transform 1s ease;
 }
 
-.card .body .imageContainer img {
-  object-fit: cover;
+.slide-hero-left {
+  opacity: 1;
+  transform: translateX(-65%) translateY(15%);
+  transition: transform 1s ease;
 }
 
-/* Feature Cards End */
+.slide-hero-right-reverse {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+  transition: transform 1s ease;
+}
+
+.slide-hero-left-reverse {
+  opacity: 1;
+  transform: translateX(0) translateY(0); /* Reversed translation */
+  transition: transform 1s ease;
+}
