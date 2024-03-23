@@ -9,7 +9,7 @@ const HeroInteraction = () => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: "-200px",
+      rootMargin: "-350px",
       threshold: 0.2,
     };
 

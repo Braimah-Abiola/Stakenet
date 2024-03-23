@@ -10,11 +10,13 @@ export default function Home() {
       <Navigation />
       <div className="h-32" />
       <Hero />
-      <div className="h-[20rem]" />
+      <div className="h-[25rem]" />
 
       <PainPoint />
+      <div className="h-[10rem]" />
+
       <Faq />
-      <div className="h-[5rem]" />
+      <div className="h-[8rem]" />
 
       <Footer />
     </main>

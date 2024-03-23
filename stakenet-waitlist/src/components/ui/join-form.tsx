@@ -9,7 +9,7 @@ const JoinForm = () => {
     console.log("Form submitted");
   };
   return (
-    <div className=" w-full">
+    <div className=" w-full z-50">
       <form
         className="items-center flex flex-col gap-10"
         onSubmit={handleSubmit}

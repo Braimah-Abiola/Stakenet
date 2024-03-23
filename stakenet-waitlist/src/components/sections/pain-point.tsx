@@ -4,9 +4,9 @@ import Cards from "./cards";
 const PainPoint = () => {
   return (
     <div className="w-full flex flex-col items-center">
-      <h1 className=" font-semibold text-5xl text-white">No More</h1>
-      <h1 className=" font-semibold text-5xl text-white">Losing Streaks</h1>
-      <p className=" text-center text-white/70 mt-2 text-base mb-4">
+      <h1 className=" font-semibold text-6xl text-white">No More</h1>
+      <h1 className=" font-semibold text-6xl text-white">Losing Streaks</h1>
+      <p className=" text-center text-white/70 mt-2 text-lg mb-4">
         Harness the power of community and AI to improve
         <br /> your sports betting winning rates
       </p>
