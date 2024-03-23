@@ -53,9 +53,7 @@ export const FloatingNav = () => {
         transition={{
           duration: 0.2,
         }}
-        className={cn(
-          "flex fixed top-5 w-full mx-auto px-3 md:px-20 z-[9999999]"
-        )}
+        className={cn("flex fixed top-5 w-full mx-auto px-3 md:px-40 z-[2]")}
       >
         <div className="w-full flex flex-row justify-between items-center">
           <Link href="/">

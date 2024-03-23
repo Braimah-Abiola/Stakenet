@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main>
       <Navigation />
-      <div className="h-32" />
+      <div className="h-[7.2rem]" />
       <Hero />
       <div className="h-[25rem]" />
 

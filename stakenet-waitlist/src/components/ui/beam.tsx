@@ -133,7 +133,7 @@ const Beam = ({
         top,
         left,
       }}
-      className="absolute z-10 h-[64px] w-[1px] bg-gradient-to-b from-[#AECE2A]/0 to-[#AECE2A]"
+      className="absolute z-[-1] h-[64px] w-[1px] bg-gradient-to-b from-[#AECE2A]/0 to-[#AECE2A]"
     />
   );
 };

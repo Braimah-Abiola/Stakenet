@@ -9,12 +9,12 @@ const JoinForm = () => {
     console.log("Form submitted");
   };
   return (
-    <div className=" w-full z-50">
+    <div className=" w-full z-[1]">
       <form
-        className="items-center flex flex-col gap-10"
+        className="items-center flex flex-col gap-7"
         onSubmit={handleSubmit}
       >
-        <CustomInput className="w-[400px]" id="email" type="email" />
+        <CustomInput className="w-[500px]" id="email" type="email" />
         <div className="bg-[#E9FF8C] h-12 flex flex-col justify-end rounded-xl cursor-pointer">
           <button
             type="submit"
