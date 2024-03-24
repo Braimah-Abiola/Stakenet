@@ -40,7 +40,7 @@ const CustomInput = React.forwardRef<HTMLInputElement, InputProps>(
           placeholder="Email address"
           type={type}
           className={cn(
-            `flex h-12 w-full border-none bg-[#0E0E0E] text-white rounded-xl px-3 py-2 text-base  file:border-0 file:bg-transparent 
+            `flex h-12 w-full border-none bg-[#0E0E0E] text-white rounded-xl px-3 py-2 text-base file:border-0 file:bg-transparent 
           file:text-sm file:font-medium placeholder:text-white
           focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-[#AECE2A]/20
            disabled:cursor-not-allowed disabled:opacity-50

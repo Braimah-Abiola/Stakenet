@@ -10,10 +10,10 @@ const PainPoint = () => {
         Harness the power of community and AI to improve
         <br /> your sports betting winning rates
       </p>
-      <div className="bg-[#E9FF8C] h-12 flex flex-col justify-end mb-20 rounded-xl cursor-pointer">
+      <div className="bg-[#E9FF8C] h-12 flex flex-col justify-end rounded-xl cursor-pointer hover:scale-105 transition-all ease-in-out duration-200 mb-20">
         <button
           type="submit"
-          className="flex items-center justify-center shadow-[0_4px_14px_0_rgb(0,0,0,10%)] hover:shadow-[0_6px_20px_rgba(93,93,93,23%)] px-4 h-[46px] bg-gradient-to-b from-[#E0FF5F] to-[#AECE2A] text-black rounded-xl font-medium text-base transition duration-200 ease-linear"
+          className="flex items-center justify-center shadow-[0_4px_14px_0_rgb(0,0,0,10%)] hover:shadow-[0_6px_20px_rgba(93,93,93,23%)] hover:bg-gradient-to-r px-4 h-[46px] bg-gradient-to-b from-[#E0FF5F] to-[#AECE2A] text-black rounded-xl font-medium text-base transition-all duration-100 ease-in-out"
         >
           Join Waitlist <ArrowRight className="ml-4" />
         </button>
