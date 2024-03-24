@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/toaster";
+import Footer from "@/components/sections/footer";
+import { Navigation } from "@/components/sections/navbar";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -24,7 +27,13 @@ export default function RootLayout({
           dmSans.className
         )}
       >
-        {children}
+        <Navigation />
+
+        <div className=" min-h-screen">{children}</div>
+        <div className="h-[8rem]" />
+
+        <Footer />
+        <Toaster />
       </body>
     </html>
   );

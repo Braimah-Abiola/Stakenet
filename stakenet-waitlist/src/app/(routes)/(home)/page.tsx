@@ -1,14 +1,28 @@
-import Footer from "@/components/sections/footer";
+"use client";
+
 import Hero from "@/components/sections/hero";
 import { Navigation } from "@/components/sections/navbar";
 import PainPoint from "@/components/sections/pain-point";
 import Faq from "@/components/ui/faq";
 
+import Lenis from "@studio-freight/lenis";
+import { useEffect } from "react";
+
 export default function Home() {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: any) {
+      lenis.raf(time);
+
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  });
   return (
     <main>
-      <Navigation />
-      <div className="h-[7.2rem]" />
+      <div id="home" className="h-[7.2rem]" />
       <Hero />
       <div className="h-[25rem]" />
 
@@ -16,9 +30,6 @@ export default function Home() {
       <div className="h-[10rem]" />
 
       <Faq />
-      <div className="h-[8rem]" />
-
-      <Footer />
     </main>
   );
 }

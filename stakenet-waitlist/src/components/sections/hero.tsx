@@ -1,15 +1,17 @@
 "use client";
 
-import Beams from "../ui/beam";
-import HeroInteraction from "../ui/hero-interaction";
 import axios from "axios";
 import { ArrowRight } from "lucide-react";
 import * as z from "zod";
+import Beams from "../ui/beam";
+import HeroInteraction from "../ui/hero-interaction";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
 import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { CustomInput } from "../ui/custom-input";
 import {
   Form,
   FormControl,
@@ -18,8 +20,6 @@ import {
   FormMessage,
 } from "../ui/form";
 import { useToast } from "../ui/use-toast";
-import { CustomInput } from "../ui/custom-input";
-import { useState } from "react";
 
 const formSchema = z.object({
   email: z
@@ -51,6 +51,12 @@ const Hero = () => {
 
       setSubmitted(true);
 
+      toast({
+        description:
+          "You have successfully joined the waitlist, you'll receive an email soon. Cheers!",
+        duration: 5000,
+      });
+
       form.reset();
       router.refresh();
       router.push("/");
@@ -70,7 +76,11 @@ const Hero = () => {
           <>
             <h1 className=" font-semibold text-6xl text-white text-center">
               Awesome! <br />
-              You&apos;re #{position} on the <br />
+              You&apos;re{" "}
+              <span className="bg-gradient-to-r from-[#E0FF5F] to-[#AECE2A] bg-clip-text text-transparent">
+                #{position}
+              </span>{" "}
+              on the <br />
               StakeNet waitlist.
             </h1>
             <p className=" text-white/70 mt-2 text-lg">
@@ -78,9 +88,16 @@ const Hero = () => {
               launch day.
             </p>
             <div className="mt-5" />
-            <div className="z-[1] pl-2.5 pr-1 flex flex-row justify-between items-center h-12 bg-[#0E0E0E] border border-white/20 w-[500px] rounded-xl">
+            <div className="z-[1] pl-2.5 pr-[3.5px] flex flex-row justify-between items-center h-12 bg-[#0E0E0E] border border-white/20 w-[500px] rounded-xl">
               <p className="text-base text-white">https://stakenet.co/#join</p>
-              <div className=" px-3 py-2 bg-transparent hover:bg-[#232323] rounded-xl flex flex-col items-center justify-center cursor-pointer">
+              <div
+                onClick={() => {
+                  toast({
+                    description: "URL copied to clipboard",
+                  });
+                }}
+                className=" px-3 py-2 bg-transparent hover:bg-[#232323] rounded-[10px] flex flex-col items-center justify-center cursor-pointer"
+              >
                 <p className=" text-[#AECE2A] text-base">Copy Link</p>
               </div>
             </div>

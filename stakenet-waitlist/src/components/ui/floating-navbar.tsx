@@ -35,7 +35,7 @@ export const FloatingNav = () => {
     }
   });
 
-  const navItems = ["Home", "About", "Changelog", "FAQs"];
+  const navItems = ["Home", "About", "Blog", "FAQs"];
 
   const [selected, setSelected] = useState(navItems[0]);
 
@@ -70,7 +70,11 @@ export const FloatingNav = () => {
             {navItems.map((navItem) => (
               <Link
                 key={`link=${navItem}`}
-                href={`/#${navItem.toLocaleLowerCase()}`}
+                href={
+                  navItem === "About" || navItem === "Blog"
+                    ? `/${navItem.toLowerCase()}`
+                    : `/#${navItem.toLowerCase()}`
+                }
               >
                 <Chip
                   text={navItem}

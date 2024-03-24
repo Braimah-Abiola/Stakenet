@@ -160,3 +160,14 @@
   background-position: 50% -15.5%;
   inset: calc(-80px + -24px) 0 0 0;
 }
+
+.footer-pattern {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-height: 100vh;
+  background-image: url(/images/footer-bg.png);
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
