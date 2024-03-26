@@ -85,12 +85,12 @@ const Hero = () => {
         {submitted ? (
           <div className="flex flex-col px-3 md:px-0 items-center">
             <h1 className=" font-semibold text-5xl md:text-6xl text-white text-center">
-              Awesome! <br />
+              Awesome! <br className="hidden md:block" />
               You&apos;re{" "}
               <span className="bg-gradient-to-r from-[#E0FF5F] to-[#AECE2A] bg-clip-text text-transparent">
                 #{position}
               </span>{" "}
-              on the <br />
+              on the <br className="hidden md:block" />
               StakeNet waitlist.
             </h1>
             <p className=" text-white/70 mt-2 text-center text-lg md:text-lg">
