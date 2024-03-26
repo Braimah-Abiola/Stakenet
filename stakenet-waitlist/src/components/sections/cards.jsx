@@ -56,7 +56,7 @@ const Cards = () => {
   return (
     <div className=" w-[200vw] md:w-full flex flex-row items-center justify-center px-40">
       {/* Left */}
-      <div className="flex flex-col -mr-[18rem] -space-y-10 md:-space-y-20">
+      <div className="flex flex-col -mr-[18rem] -space-y-14 md:-space-y-20">
         <div
           className=" w-[250px] h-[150px] md:w-[400px] md:h-[200px] relative rotate-12 z-[-50]"
           ref={(el) => (imageRefs.current[0] = el)}
@@ -77,7 +77,7 @@ const Cards = () => {
       </div>
 
       {/* Right */}
-      <div className="flex flex-col -ml-[18rem] -space-y-10 md:-space-y-20">
+      <div className="flex flex-col -ml-[18rem] -space-y-14 md:-space-y-20">
         <div className=" w-[250px] h-[150px] md:w-[400px] md:h-[200px] relative -rotate-12 z-[-50]" ref={(el) => (imageRefs.current[3] = el)}>
           <Image className=" object-contain" fill src="/images/msport.png" alt="MSport" />
         </div>

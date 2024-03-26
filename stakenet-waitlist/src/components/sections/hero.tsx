@@ -110,11 +110,21 @@ const Hero = () => {
           </div>
         ) : (
           <div className="flex flex-col items-center text-center md:text-start px-3 md:px-0">
-            <h1 className=" font-semibold text-5xl md:text-6xl text-white">
+            <h1 className=" md:hidden font-semibold text-5xl md:text-6xl text-white">
+              Join our waitlist to{" "}
+              <span className="bg-gradient-to-r from-[#E0FF5F] to-[#AECE2A] bg-clip-text text-transparent">
+                level up
+              </span>{" "}
+              online betting
+            </h1>
+            <h1 className="hidden md:block font-semibold text-5xl md:text-6xl text-white">
               Join our waitlist to
             </h1>
-            <h1 className=" font-semibold text-5xl md:text-6xl text-white">
-              <span>level up</span> online betting
+            <h1 className="hidden md:block font-semibold text-5xl md:text-6xl text-white">
+              <span className="bg-gradient-to-r from-[#E0FF5F] to-[#AECE2A] bg-clip-text text-transparent">
+                level up
+              </span>{" "}
+              online betting
             </h1>
             <p className=" text-white/70 mt-2 text-center text-lg px-10 md:px-0 md:text-lg">
               Stakenet is currently invite-only. Sign up to get early access!

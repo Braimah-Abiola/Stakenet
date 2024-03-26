@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col md:flex-row justify-between md:items-end px-3 md:px-40 mt-10">
+      <div className="w-full flex flex-col md:flex-row justify-between md:items-end px-3 md:px-40 md:mt-10">
         <div className="flex flex-col items-start gap-2 mb-2.5">
           <div className=" mb-4 flex flex-row gap-10">
             <Link
