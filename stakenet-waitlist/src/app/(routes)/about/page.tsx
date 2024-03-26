@@ -6,8 +6,8 @@ const AboutPage = () => {
       <Beams />
       <div className="h-[8rem]" />
       <h1 className=" font-semibold text-5xl md:text-6xl text-white text-center">
-        10X your winning <br />
-        rate the StakeNet <br />
+        10X your winning <br className=" hidden md:block"/>
+        rate the StakeNet <br className=" hidden md:block"/>
         app now!
       </h1>
 

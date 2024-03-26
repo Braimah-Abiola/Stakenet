@@ -1,12 +1,11 @@
 const PrivacyPolicy = () => {
   return (
-    <div className="w-full px-40 flex flex-col items-center">
+    <div className="w-full px-3 md:px-40 flex flex-col items-start md:items-center">
       <div className="h-[8rem]" />
-      <h1 className=" font-semibold text-6xl text-white text-center">
+      <h1 className=" font-semibold text-5xl md:text-6xl text-white text-center">
         Privacy Policy
       </h1>
-
-      <div className=" max-w-xl gap-6 mt-5 flex flex-col">
+      <div className=" max-w-xl gap-3 md:gap-6 mt-5 flex flex-col">
         <h4 className=" text-white/80 text-lg">
           Your privacy is important to us.
         </h4>
@@ -23,11 +22,11 @@ const PrivacyPolicy = () => {
           Last updated on 24 March 2024
         </p>
 
-        <h1 className=" font-semibold text-5xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-4xl md:text-5xl mt-10 text-white text-start">
           Information we collect
         </h1>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Personal Information
         </h1>
 
@@ -51,7 +50,7 @@ const PrivacyPolicy = () => {
           over time.
         </h4>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Collection and Use of Information
         </h1>
         <h4 className=" text-white/80 text-lg">
@@ -64,7 +63,7 @@ const PrivacyPolicy = () => {
           <h4 className=" text-white/80 text-lg -mt-2 text-start">Email</h4>
         </div>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Legitimate Reasons for Processing Your Personal Information
         </h1>
         <h4 className=" text-white/80 text-lg">
@@ -74,7 +73,7 @@ const PrivacyPolicy = () => {
           services to you when you contact me.
         </h4>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Limits of Our Policy
         </h1>
         <h4 className=" text-white/80 text-lg">
@@ -84,7 +83,7 @@ const PrivacyPolicy = () => {
           their respective privacy practices.
         </h4>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Changes to This Policy
         </h1>
         <h4 className=" text-white/80 text-lg">
@@ -100,15 +99,14 @@ const PrivacyPolicy = () => {
           your personal information.
         </h4>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Contact Us
         </h1>
         <h4 className=" text-white/80 text-lg">
           For any questions or concerns regarding your privacy, you may contact
           us using the following details:
         </h4>
-        <h4 className=" text-white/80 text-lg underline underline-offset-2">
-          {" "}
+        <h4 className=" text-white/80 cursor-pointer hover:text-white text-lg underline underline-offset-4">
           supprt@stakenet.co
         </h4>
       </div>

@@ -141,7 +141,7 @@ const Hero = () => {
                     name="email"
                     control={form.control}
                     render={({ field }) => (
-                      <FormItem className="w-full px-4 md:mx-0 md:w-fit">
+                      <FormItem className="w-full px-4 md:mx-0 md:w-fit flex flex-col items-center">
                         <FormControl>
                           <CustomInput
                             className=" w-full md:w-[500px]"

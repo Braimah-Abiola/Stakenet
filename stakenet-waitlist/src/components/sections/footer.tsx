@@ -112,11 +112,8 @@ const Footer = () => {
             text="Mail: contact@stakenet.co"
           />
         </div>
-        <div className="flex flex-row gap-10">
-          <FooterLink
-            link="/legals/privacy-policy"
-            text="StakeNet Privacy Policy"
-          />
+        <div className="flex flex-col md:flex-row gap-2 md:gap-10">
+          <FooterLink link="/legals/privacy-policy" text="Privacy Policy" />
           <FooterLink
             link="/legals/terms-of-service"
             text="Terms of Services"

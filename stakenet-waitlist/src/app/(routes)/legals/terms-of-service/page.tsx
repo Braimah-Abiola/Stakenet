@@ -1,13 +1,13 @@
 const TermsOfService = () => {
   return (
-    <div className="w-full px-40 flex flex-col items-center">
+    <div className="w-full px-3 md:px-40 flex flex-col items-start md:items-center">
       <div className="h-[8rem]" />
 
-      <h1 className=" font-semibold text-6xl text-white text-center">
+      <h1 className=" font-semibold text-5xl md:text-6xl text-white text-start md:text-center">
         Terms of service
       </h1>
 
-      <div className=" max-w-xl gap-6 mt-5 flex flex-col">
+      <div className=" max-w-xl gap-3 md:gap-6 mt-5 flex flex-col">
         <h4 className=" text-white/80 text-lg">
           These Terms of Service govern your use of the website located at and
           any related services provided by Stakenet.
@@ -24,7 +24,7 @@ const TermsOfService = () => {
           These Terms of Service were last updated on 24 March 2024
         </p>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Limitations of Use
         </h1>
 
@@ -101,7 +101,7 @@ const TermsOfService = () => {
           </h4>
         </div>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Intellectual Property
         </h1>
         <h4 className=" text-white/80 text-lg">
@@ -116,7 +116,7 @@ const TermsOfService = () => {
           Stakenet at any time.
         </h4>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Liability
         </h1>
         <h4 className=" text-white/80 text-lg">
@@ -148,7 +148,7 @@ const TermsOfService = () => {
           incidental damages, these limitations may not apply to you.
         </h4>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Accuracy of Materials
         </h1>
         <h4 className=" text-white/80 text-lg">
@@ -159,7 +159,7 @@ const TermsOfService = () => {
           relating to such materials or on any resources linked to this website.
         </h4>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Links
         </h1>
         <h4 className=" text-white/80 text-lg">
@@ -171,7 +171,7 @@ const TermsOfService = () => {
           respect to the suitability of those sites.
         </h4>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Right to Terminate
         </h1>
         <h4 className=" text-white/80 text-lg">
@@ -180,7 +180,7 @@ const TermsOfService = () => {
           you for any breach of these Terms of Service
         </h4>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Severance
         </h1>
         <h4 className=" text-white/80 text-lg">
@@ -190,7 +190,7 @@ const TermsOfService = () => {
           is not affected.
         </h4>
 
-        <h1 className=" font-semibold text-4xl mt-10 text-white text-start">
+        <h1 className=" font-semibold text-3xl md:text-4xl mt-10 text-white text-start">
           Governing Law
         </h1>
         <h4 className=" text-white/80 text-lg">
