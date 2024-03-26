@@ -94,8 +94,8 @@ export const FloatingNav = () => {
               <GooglePlayButton />
             </div>
           </div>
-          <div className=" lg:hidden">
-            <div className="flex items-center text-white/70 hover:text-black justify-center w-14 h-14 aspect-square rounded-full bg-[#242525] hover:bg-[#AECE2A] hover:scale-110 transition-all ease-in-out duration-200">
+          <div className="lg:hidden z-[2]">
+            <div className="flex cursor-pointer items-center text-white/70 hover:text-black justify-center w-12 h-12 aspect-square rounded-full bg-[#242525] hover:bg-[#AECE2A] hover:scale-110 transition-all ease-in-out duration-200">
               <Menu />
             </div>
           </div>
