@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col items-start w-full md:w-1/2">
           <h1 className=" font-semibold text-5xl text-white">
             10X your winning <br className=" hidden md:block" />
-            rate the StakeNet <br className=" hidden md:block" />
+            rate using the StakeNet <br className=" hidden md:block" />
             app now!
           </h1>
           <div className="flex flex-row gap-4 mt-8 md:mt-12 z-[1]">
