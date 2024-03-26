@@ -5,11 +5,15 @@ import Link from "next/link";
 const PainPoint = () => {
   return (
     <div className="w-full flex flex-col items-center">
-      <h1 className=" font-semibold text-6xl text-white">No More</h1>
-      <h1 className=" font-semibold text-6xl text-white">Losing Streaks</h1>
-      <p className=" text-center text-white/70 mt-2 text-lg mb-4">
+      <h1 className=" font-semibold text-5xl md:text-6xl text-white">
+        No More
+      </h1>
+      <h1 className=" font-semibold text-5xl md:text-6xl text-white">
+        Losing Streaks
+      </h1>
+      <p className=" text-center text-white/70 mt-2 px-4 md:px-0 text-lg mb-4">
         Harness the power of community and AI to improve
-        <br /> your sports betting winning rates
+        <br className=" hidden md:block" /> your sports betting winning rates
       </p>
       <Link href="/#home">
         <div className="bg-[#E9FF8C] h-12 flex flex-col justify-end rounded-xl cursor-pointer hover:scale-105 transition-all ease-in-out duration-200 mb-20">

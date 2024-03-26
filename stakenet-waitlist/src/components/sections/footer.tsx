@@ -6,21 +6,24 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-full pt-20 pb-6 footer-pattern">
-      <div className="w-full flex items-center flex-row justify-between px-40">
-        <div className="flex flex-col items-start w-1/2">
+    <div className="w-full md:pt-20 pb-6 footer-pattern">
+      <div className="w-full flex items-center flex-col md:flex-row justify-between px-3 md:px-40">
+        <div className="flex flex-col items-start w-full md:w-1/2">
           <h1 className=" font-semibold text-5xl text-white">
             10X your winning <br />
             rate the StakeNet <br />
             app now!
           </h1>
-          <div className="flex flex-row gap-4 mt-12">
+          <div className="flex flex-row gap-4 mt-8 md:mt-12 z-[1]">
             <AppStoreButton />
             <GooglePlayButton />
           </div>
         </div>
         <div className="w-full ">
-          <div className="relative h-[750px] ml-20 w-full" id="float">
+          <div
+            className="relative h-[750px] md:ml-20 w-full -mt-20 md:-mt-0"
+            id="float"
+          >
             <Image
               className=" object-contain"
               fill
@@ -31,8 +34,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-row justify-between items-end px-40 mt-10">
-        <div className="flex flex-col items-start gap-2">
+      <div className="w-full flex flex-col md:flex-row justify-between md:items-end px-3 md:px-40 mt-10">
+        <div className="flex flex-col items-start gap-2 mb-2.5">
           <div className=" mb-4 flex flex-row gap-10">
             <Link
               rel="noopener noreferrer"
@@ -40,7 +43,7 @@ const Footer = () => {
               href="https://t.me/stakenet"
             >
               <svg
-                className=" hover:scale-125 ease-in-out duration-200 cursor-pointer"
+                className=" grayscale-[100] hover:grayscale-0 hover:scale-125 ease-in-out duration-200 cursor-pointer"
                 width="34"
                 height="27"
                 viewBox="0 0 39 32"
@@ -59,7 +62,7 @@ const Footer = () => {
               href="https://instagram.com/stakenetapp"
             >
               <svg
-                className=" hover:scale-125 ease-in-out duration-200 cursor-pointer"
+                className=" grayscale-[100] hover:grayscale-0 hover:scale-125 ease-in-out duration-200 cursor-pointer"
                 width="28"
                 height="27"
                 viewBox="0 0 33 32"
@@ -90,7 +93,7 @@ const Footer = () => {
               href="https://twitter.com/stakenetapp"
             >
               <svg
-                className=" hover:scale-125 ease-in-out duration-200 cursor-pointer"
+                className=" grayscale-[100] hover:grayscale-0 hover:scale-125 ease-in-out duration-200 cursor-pointer"
                 width="30"
                 height="27"
                 viewBox="0 0 35 32"

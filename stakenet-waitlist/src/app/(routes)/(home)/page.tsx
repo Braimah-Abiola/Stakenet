@@ -1,7 +1,6 @@
 "use client";
 
 import Hero from "@/components/sections/hero";
-import { Navigation } from "@/components/sections/navbar";
 import PainPoint from "@/components/sections/pain-point";
 import Faq from "@/components/ui/faq";
 
@@ -22,12 +21,12 @@ export default function Home() {
   });
   return (
     <main>
-      <div id="home" className="h-[7.2rem]" />
+      <div id="home" className=" h-[6rem] md:h-[7.2rem]" />
       <Hero />
-      <div className="h-[25rem]" />
+      <div className=" h-[20rem] md:h-[25rem]" />
 
       <PainPoint />
-      <div className="h-[10rem]" />
+      <div className=" h-[20rem] md:h-[10rem]" />
 
       <Faq />
     </main>

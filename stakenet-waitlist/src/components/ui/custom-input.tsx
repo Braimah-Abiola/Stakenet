@@ -34,7 +34,7 @@ const CustomInput = React.forwardRef<HTMLInputElement, InputProps>(
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setVisible(true)}
         onMouseLeave={() => setVisible(false)}
-        className="p-[2px] rounded-2xl transition duration-300 group/input"
+        className="p-[2px] rounded-2xl transition duration-300 group/input w-full"
       >
         <input
           placeholder="Email address"

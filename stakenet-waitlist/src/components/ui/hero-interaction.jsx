@@ -46,7 +46,7 @@ const HeroInteraction = () => {
     };
   }, []);
   return (
-    <div className="w-full flex flex-col px-40">
+    <div className="w-full flex flex-col px-40 z-[1]">
       <div className="flex flex-row items-center justify-center -space-x-40">
         <div className="flex flex-col items-center z-[-10]" ref={(el) => (imageRefs.current[0] = el)}>
           <div className="w-[440px] h-[890px] z-[999] relative">
