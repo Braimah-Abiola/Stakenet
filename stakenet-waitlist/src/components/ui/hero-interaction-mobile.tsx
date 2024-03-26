@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LandingWrapper from "../landing-wrapper";
+import LandingWrapper from "../wrapper/landing-wrapper";
 
 const HeroInteractionMobile = () => {
   return (
