@@ -48,7 +48,7 @@ const HeroInteraction = () => {
   return (
     <div className="w-full flex flex-col px-40 z-[1]">
       <div className="flex flex-row items-center justify-center -space-x-40">
-        <div className="flex flex-col items-center z-[-10]" ref={(el) => (imageRefs.current[0] = el)}>
+        <div className="flex flex-col items-center z-[1]" ref={(el) => (imageRefs.current[0] = el)}>
           <div className="w-[440px] h-[890px] z-[999] relative">
             <Image fill src="/images/mockup-1.png" alt="Product image" />
           </div>
@@ -59,7 +59,7 @@ const HeroInteraction = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center z-[-8] -mt-[10rem]" ref={(el) => (imageRefs.current[1] = el)}>
+        <div className="flex flex-col items-center z-[2] -mt-[10rem]" ref={(el) => (imageRefs.current[1] = el)}>
           <div className="w-[440px] h-[890px] z-[999] relative">
             <Image fill src="/images/mockup-2.png" alt="Product image" />
           </div>
@@ -70,7 +70,7 @@ const HeroInteraction = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center z-[-10]" ref={(el) => (imageRefs.current[2] = el)}>
+        <div className="flex flex-col items-center z-[1]" ref={(el) => (imageRefs.current[2] = el)}>
           <div className="w-[440px] h-[890px] z-[999] relative">
             <Image fill src="/images/mockup-3.png" alt="Product image" />
           </div>
