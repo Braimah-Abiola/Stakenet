@@ -10,8 +10,8 @@ const Footer = () => {
       <div className="w-full flex items-center flex-col md:flex-row justify-between px-3 md:px-40">
         <div className="flex flex-col items-start w-full md:w-1/2">
           <h1 className=" font-semibold text-5xl text-white">
-            10X your winning <br />
-            rate the StakeNet <br />
+            10X your winning <br className=" hidden md:block" />
+            rate the StakeNet <br className=" hidden md:block" />
             app now!
           </h1>
           <div className="flex flex-row gap-4 mt-8 md:mt-12 z-[1]">
