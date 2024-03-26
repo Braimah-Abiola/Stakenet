@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { Toaster } from "@/components/ui/toaster";
 import Footer from "@/components/sections/footer";
 import { Navigation } from "@/components/sections/navbar";
+import { NavigationMobile } from "@/components/sections/navbar-mobile";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -27,7 +28,13 @@ export default function RootLayout({
           dmSans.className
         )}
       >
-        <Navigation />
+        <div className="hidden md:block">
+          <Navigation />
+        </div>
+
+        <div className="md:hidden">
+          <NavigationMobile />
+        </div>
 
         <div className=" min-h-screen">{children}</div>
         <div className="h-[8rem]" />

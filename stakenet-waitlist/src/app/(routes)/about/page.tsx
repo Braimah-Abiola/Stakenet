@@ -2,10 +2,10 @@ import Beams from "@/components/ui/beam";
 
 const AboutPage = () => {
   return (
-    <div className="w-full px-40 flex flex-col items-center">
+    <div className="w-full px-3 md:px-40 flex flex-col items-center">
       <Beams />
       <div className="h-[8rem]" />
-      <h1 className=" font-semibold text-6xl text-white text-center">
+      <h1 className=" font-semibold text-5xl md:text-6xl text-white text-center">
         10X your winning <br />
         rate the StakeNet <br />
         app now!

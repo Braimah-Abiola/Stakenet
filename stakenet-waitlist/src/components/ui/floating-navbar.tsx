@@ -1,10 +1,10 @@
 "use client";
 import { cn } from "@/lib/utils";
 import {
-  motion,
   AnimatePresence,
-  useScroll,
+  motion,
   useMotionValueEvent,
+  useScroll,
 } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,7 +12,7 @@ import { useState } from "react";
 import AppStoreButton from "./app-store-button";
 import Chip from "./chip";
 import GooglePlayButton from "./google-play-button";
-import { Menu } from "lucide-react";
+import Header from "./header";
 
 export const FloatingNav = () => {
   const { scrollYProgress } = useScroll();
@@ -54,7 +54,7 @@ export const FloatingNav = () => {
         transition={{
           duration: 0.2,
         }}
-        className={cn("flex fixed top-5 w-full mx-auto px-3 md:px-40 z-[2]")}
+        className={cn("flex fixed top-5 w-full mx-auto px-3 md:px-40 z-[10]")}
       >
         <div className="w-full flex flex-row justify-between items-center">
           <Link href="/">
@@ -94,10 +94,8 @@ export const FloatingNav = () => {
               <GooglePlayButton />
             </div>
           </div>
-          <div className="lg:hidden z-[2]">
-            <div className="flex cursor-pointer items-center text-white/70 hover:text-black justify-center w-12 h-12 aspect-square rounded-full bg-[#242525] hover:bg-[#AECE2A] hover:scale-110 transition-all ease-in-out duration-200">
-              <Menu />
-            </div>
+          <div className="md:hidden h-fit">
+            <Header />
           </div>
         </div>
       </motion.div>
