@@ -98,11 +98,11 @@ const Hero = () => {
               launch day.
             </p>
             <div className="mt-5" />
-            <div className="z-[1] pl-2.5 pr-[3.5px] flex flex-row justify-between items-center h-12 bg-[#0E0E0E] border border-white/20 w-full md:w-[500px] rounded-xl">
+            <div className="z-[1] pl-2.5 pr-[2px] flex flex-row justify-between items-center h-12 bg-[#0E0E0E] border border-white/20 w-full md:w-[500px] rounded-xl">
               <p className="text-lg text-white">https://stakenet.co/#join</p>
               <div
                 onClick={handleCopyToClipboard}
-                className=" px-3 py-2 bg-transparent hover:bg-[#232323] rounded-[10px] flex flex-col items-center justify-center cursor-pointer"
+                className=" px-[10px] py-[7px] bg-[#232323] hover:bg-[#232323]/80 rounded-[8px] flex flex-col items-center justify-center cursor-pointer"
               >
                 <p className=" text-[#AECE2A] text-lg">Copy Link</p>
               </div>

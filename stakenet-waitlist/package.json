@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "email": "email dev",
     "postinstall": "prisma generate"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.1.5",
+    "@react-email/components": "0.0.15",
     "@studio-freight/lenis": "^1.0.27",
     "@tabler/icons-react": "^3.1.0",
     "axios": "^1.6.8",
@@ -27,6 +29,7 @@
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-email": "2.1.0",
     "react-hook-form": "^7.51.1",
     "resend": "^3.2.0",
     "tailwind-merge": "^2.0.0",

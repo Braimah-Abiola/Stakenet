@@ -1,7 +1,9 @@
 import { PrismaClient } from "@prisma/client";
 import { Resend } from "resend"; // Import Resend class
-import { EmailTemplate } from "@/components/email/email-template"; // Import your email template
 import { NextResponse } from "next/server";
+
+import StakenetWelcomeEmail from "../../../../emails";
+import { render } from "@react-email/components";
 
 const prisma = new PrismaClient();
 const resend = new Resend(process.env.RESEND_API_KEY); // Initialize Resend instance
@@ -37,10 +39,10 @@ export async function POST(req: Request) {
 
     // Send email to the user
     const { data, error } = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
+      from: "Stakenet <onboarding@resend.dev>",
       to: [email],
       subject: "Welcome to the StakeNet Waitlist!",
-      react: EmailTemplate({ position }) as React.ReactElement,
+      html: render(StakenetWelcomeEmail({ position })),
     });
 
     if (error) {
