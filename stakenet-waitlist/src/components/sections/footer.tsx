@@ -7,11 +7,11 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="w-full md:pt-20 pb-6 footer-pattern">
-      <div className="w-full flex items-center flex-col md:flex-row justify-between px-3 md:px-40">
+      <div className="w-full flex items-center flex-col md:flex-row justify-between px-3 lg:px-10 xl:px-20 2xl:px-40">
         <div className="flex flex-col items-start w-full md:w-1/2">
           <h1 className=" font-semibold text-5xl text-white">
             10X your winning <br className=" hidden md:block" />
-            rate using the StakeNet <br className=" hidden md:block" />
+            rate using the StakeNet <br className=" hidden 2xl:block" />
             app now!
           </h1>
           <div className="flex flex-row gap-4 mt-8 md:mt-12 z-[1]">
@@ -19,22 +19,22 @@ const Footer = () => {
             <GooglePlayButton />
           </div>
         </div>
-        <div className="w-full ">
+        <div className="w-full mt-10 md:mt-0">
           <div
-            className="relative h-[750px] md:ml-20 w-full -mt-20 md:-mt-0"
+            className="relative h-[600px] xl:h-[650px] 2xl:h-[750px] md:ml-20 w-full -mt-20 md:-mt-0"
             id="float"
           >
             <Image
               className=" object-contain"
               fill
-              src="/images/footer-img.png"
+              src="/images/footer-img.webp"
               alt="Product mockup"
             />
           </div>
         </div>
       </div>
 
-      <div className="w-full flex flex-col md:flex-row justify-between md:items-end px-3 md:px-40 md:mt-10">
+      <div className="w-full flex flex-col md:flex-row justify-between md:items-end px-3 lg:px-10 xl:px-20 2xl:px-40 md:mt-10">
         <div className="flex flex-col items-start gap-2 mb-2.5">
           <div className=" mb-4 flex flex-row gap-10">
             <Link

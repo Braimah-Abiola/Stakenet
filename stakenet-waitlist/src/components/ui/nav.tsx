@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import NavLink from "./nav-link";
 import Curve from "./curve";
+import Link from "next/link";
 
 const navItems = [
   {
@@ -20,10 +21,6 @@ const navItems = [
     title: "FAQs",
     href: "/#faqs",
   },
-  {
-    title: "Blog",
-    href: "/blog",
-  },
 ];
 
 const Nav = () => {
@@ -36,7 +33,7 @@ const Nav = () => {
       initial="initial"
       animate="enter"
       exit="exit"
-      className="menu"
+      className="menu w-full md:w-1/2"
     >
       <div className="body items-start">
         <div
@@ -57,9 +54,15 @@ const Nav = () => {
           })}
         </div>
         <div className="footer pb-12">
-          <a>Telegram</a>
-          <a>Instagram</a>
-          <a>Twitter</a>
+          <Link href="https://t.me/stakenetapp">
+            <p>Telegram</p>
+          </Link>
+          <Link href="https://instagram.com/stakenetapp">
+            <p>Instagram</p>
+          </Link>
+          <Link href="https://twitter.com/stakenetapp">
+            <p>Twitter</p>
+          </Link>
         </div>
       </div>
       <Curve />

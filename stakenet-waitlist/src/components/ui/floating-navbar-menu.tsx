@@ -33,14 +33,16 @@ export const FloatingNavMobile = () => {
     }
   });
 
-  const navItems = ["Home", "About", "Blog", "FAQs"];
+  const navItems = ["Home", "About", "FAQs"];
 
   const [selected, setSelected] = useState(navItems[0]);
 
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        className={cn("flex fixed top-5 w-full mx-auto px-3 md:px-40 z-[10]")}
+        className={cn(
+          "flex fixed top-5 w-full mx-auto px-3 lg:px-[40px] z-[10]"
+        )}
       >
         <div className="w-full flex flex-row justify-between items-center">
           <Link className="logo" href="/">

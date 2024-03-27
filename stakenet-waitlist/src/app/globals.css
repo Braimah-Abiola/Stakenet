@@ -167,9 +167,20 @@
   position: absolute;
   min-height: 100vh;
   background-image: url(/images/footer-bg.png);
-
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+@media (min-width: 1024px) {
+  .footer-pattern {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    min-height: 60vh;
+    background-image: url(/images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 }
 
 .logo {
@@ -229,8 +240,26 @@
   top: 0px;
 }
 
+@media (min-width: 1024px) {
+  .menu-button {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    margin-top: 15px;
+    margin-right: 40px;
+    z-index: 2;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #242525;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .menu {
-  width: 100vw;
   height: 100dvh;
   background-color: #060606;
   position: fixed;

@@ -9,7 +9,7 @@ const HeroInteractionMobile = () => {
           <div className="w-full h-[750px] z-[1] relative">
             <Image
               fill
-              src="/images/mockup-2.png"
+              src="/images/mockup-2.webp"
               className=" object-contain"
               alt="Product image"
             />
@@ -25,7 +25,7 @@ const HeroInteractionMobile = () => {
           <div className="w-full h-[750px] z-[1] relative">
             <Image
               fill
-              src="/images/mockup-1.png"
+              src="/images/mockup-1.webp"
               className=" object-contain"
               alt="Product image"
             />
@@ -41,7 +41,7 @@ const HeroInteractionMobile = () => {
           <div className="w-full h-[750px] z-[1] relative">
             <Image
               fill
-              src="/images/mockup-3.png"
+              src="/images/mockup-3.webp"
               className=" object-contain"
               alt="Product image"
             />

@@ -28,11 +28,11 @@ export default function RootLayout({
           dmSans.className
         )}
       >
-        <div className="hidden md:block">
+        <div className="hidden xl:block">
           <Navigation />
         </div>
 
-        <div className="md:hidden">
+        <div className="xl:hidden">
           <NavigationMobile />
         </div>
 

@@ -36,7 +36,7 @@ export const FloatingNav = () => {
     }
   });
 
-  const navItems = ["Home", "About", "Blog", "FAQs"];
+  const navItems = ["Home", "About", "FAQs"];
 
   const [selected, setSelected] = useState(navItems[0]);
 
@@ -54,7 +54,9 @@ export const FloatingNav = () => {
         transition={{
           duration: 0.2,
         }}
-        className={cn("flex fixed top-5 w-full mx-auto px-3 md:px-40 z-[10]")}
+        className={cn(
+          "flex fixed top-5 w-full mx-auto px-3 xl:px-20 2xl:px-40 z-[10]"
+        )}
       >
         <div className="w-full flex flex-row justify-between items-center">
           <Link href="/">

@@ -21,12 +21,15 @@ export default function Home() {
   });
   return (
     <main>
-      <div id="home" className=" h-[6rem] md:h-[7.2rem]" />
+      <div
+      id="home"
+        className=" h-[6rem] lg:h-[8rem] xl:h-[8rem] 2xl:h-[7.2rem]"
+      />
       <Hero />
-      <div className=" h-[20rem] md:h-[25rem]" />
+      <div className=" h-[20rem] lg:h-[15rem] xl:h-[20rem] 2xl:h-[25rem]" />
 
       <PainPoint />
-      <div className=" h-[20rem] md:h-[10rem]" />
+      <div className=" h-[20rem] lg:h-[10rem] xl:h-[10rem] 2xl:h-[12rem]" />
 
       <Faq />
     </main>
