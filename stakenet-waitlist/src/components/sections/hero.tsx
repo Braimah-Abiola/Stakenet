@@ -81,7 +81,7 @@ const Hero = () => {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="w-fit flex flex-col items-center justify-center mb-32">
+      <div className="w-fit flex flex-col items-center justify-center lg:mb-10 xl:mb-20 2xl:mb-32">
         {submitted ? (
           <div className="flex flex-col px-3 md:px-0 items-center">
             <h1 className=" font-semibold text-5xl md:text-6xl text-white text-center">

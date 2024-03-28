@@ -4,14 +4,14 @@ const AboutPage = () => {
   return (
     <div className="w-full px-3 md:px-40 flex flex-col items-center">
       <Beams />
-      <div className="h-[8rem]" />
+      <div className="h-[7.7rem]" />
       <h1 className=" font-semibold text-5xl md:text-6xl text-white text-center">
-        10X your winning <br className=" hidden md:block" />
-        rate with the StakeNet <br className=" hidden md:block" />
-        app now!
+        10X winning rate with
+        <br className=" hidden md:block" />
+        StakeNet app now!
       </h1>
 
-      <div className=" max-w-xl gap-6 mt-6 flex flex-col">
+      <div className=" max-w-2xl gap-6 mt-6 2xl:mt-12 flex flex-col">
         <h4 className=" text-white/80 text-lg">
           In a realm saturated with betting platforms offering generic
           solutions, Stakenet emerges as a beacon of personalized and insightful

@@ -55,12 +55,12 @@ export const FloatingNav = () => {
           duration: 0.2,
         }}
         className={cn(
-          "flex fixed top-5 w-full mx-auto px-3 xl:px-20 2xl:px-40 z-[10]"
+          "flex fixed top-2 2xl:top-4 w-full mx-auto px-3 xl:px-10 2xl:px-40 z-[10]"
         )}
       >
         <div className="w-full flex flex-row justify-between items-center">
           <Link href="/">
-            <div className=" relative w-[152px] h-[42px]">
+            <div className=" relative w-[152px] h-[42px] hover:scale-110 ease-in-out transition-all duration-200">
               <Image
                 className=" object-contain"
                 fill
@@ -70,7 +70,7 @@ export const FloatingNav = () => {
             </div>
           </Link>
           <div className="hidden lg:block">
-            <div className=" max-w-fit flex border border-transparent rounded-full ml-[11rem] bg-[#0E0E0E] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] pr-2.5 pl-2.5 py-2  items-center justify-center space-x-4">
+            <div className=" max-w-fit flex border border-transparent rounded-full xl:ml-[11rem] 2xl:ml-[11rem] bg-[#0E0E0E] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] pr-2.5 pl-2.5 py-2  items-center justify-center space-x-4">
               {navItems.map((navItem) => (
                 <Link
                   key={`link=${navItem}`}

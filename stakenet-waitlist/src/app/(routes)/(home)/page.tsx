@@ -22,8 +22,8 @@ export default function Home() {
   return (
     <main>
       <div
-      id="home"
-        className=" h-[6rem] lg:h-[8rem] xl:h-[8rem] 2xl:h-[7.2rem]"
+        id="home"
+        className=" h-[6rem] lg:h-[7rem] xl:h-[7rem] 2xl:h-[7.5rem]"
       />
       <Hero />
       <div className=" h-[20rem] lg:h-[15rem] xl:h-[20rem] 2xl:h-[25rem]" />

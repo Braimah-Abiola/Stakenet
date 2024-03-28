@@ -134,20 +134,40 @@
 
 .slide-hero-right {
   opacity: 1;
-  transform: translateX(65%) translateY(0%);
+  transform: translateX(15vw) translateY(0vw);
   transition: transform 1s ease;
 }
 
 .slide-hero-up {
   opacity: 1;
-  transform: translateY(8%);
+  transform: translateY(5vw);
   transition: transform 1s ease;
 }
 
 .slide-hero-left {
   opacity: 1;
-  transform: translateX(-65%) translateY(0%);
+  transform: translateX(-15vw) translateY(0vw);
   transition: transform 1s ease;
+}
+
+@media (min-width: 1536px) {
+  .slide-hero-right {
+    opacity: 1;
+    transform: translateX(15vw) translateY(0vw);
+    transition: transform 1s ease;
+  }
+
+  .slide-hero-up {
+    opacity: 1;
+    transform: translateY(4.2vw);
+    transition: transform 1s ease;
+  }
+
+  .slide-hero-left {
+    opacity: 1;
+    transform: translateX(-15vw) translateY(0vw);
+    transition: transform 1s ease;
+  }
 }
 
 .grid-pattern {

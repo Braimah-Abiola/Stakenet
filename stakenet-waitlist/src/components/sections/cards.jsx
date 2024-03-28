@@ -72,7 +72,7 @@ const Cards = () => {
       </div>
 
       {/* Product Image */}
-      <div className="w-full h-[650px] lg:w-[320px] lg:h-[690px] xl:w-[400px] xl:h-[790px] 2xl:w-[440px] 2xl:h-[890px] z-0 relative">
+      <div className="w-full h-[650px] lg:w-[20rem] lg:h-[43.125rem] xl:w-[25rem] xl:h-[49.375rem] 2xl:w-[27.5rem] 2xl:h-[55.625rem]  z-0 relative">
         <Image className="object-contain" fill src="/images/mockup-3.webp" alt="Product image" />
       </div>
 
