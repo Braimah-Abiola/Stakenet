@@ -176,7 +176,7 @@ const Hero = () => {
         <HeroInteraction />
       </div>
 
-      <div className="lg:hidden w-full">
+      <div className="lg:hidden w-full mt-28">
         <HeroInteractionMobile />
       </div>
     </div>
