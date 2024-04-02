@@ -81,7 +81,7 @@ const Hero = () => {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="w-fit flex flex-col items-center justify-center lg:mb-10 xl:mb-20 2xl:mb-32">
+      <div className="w-fit flex flex-col items-center justify-center lg:mb-24 xl:mb-40 2xl:mb-32">
         {submitted ? (
           <div className="flex flex-col px-3 md:px-0 items-center">
             <h1 className=" font-semibold text-5xl md:text-6xl text-white text-center">
@@ -155,7 +155,7 @@ const Hero = () => {
                       </FormItem>
                     )}
                   />
-                  <div className="bg-[#E9FF8C] h-12 flex flex-col justify-end rounded-xl cursor-pointer hover:scale-105 transition-all ease-in-out duration-200">
+                  <div className="bg-[#E9FF8C] 2xl:-mt-2 h-12 flex flex-col justify-end rounded-xl cursor-pointer hover:scale-105 transition-all ease-in-out duration-200">
                     <button
                       disabled={isLoading}
                       type="submit"
