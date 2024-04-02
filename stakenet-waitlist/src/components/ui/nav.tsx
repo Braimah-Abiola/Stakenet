@@ -7,6 +7,7 @@ import { useState } from "react";
 import NavLink from "./nav-link";
 import Curve from "./curve";
 import Link from "next/link";
+import FooterLink from "./footer-link";
 
 const navItems = [
   {
@@ -54,15 +55,12 @@ const Nav = () => {
           })}
         </div>
         <div className="footer pb-12">
-          <Link href="https://t.me/stakenetapp">
-            <p>Telegram</p>
-          </Link>
-          <Link href="https://instagram.com/stakenetapp">
-            <p>Instagram</p>
-          </Link>
-          <Link href="https://twitter.com/stakenetapp">
-            <p>Twitter</p>
-          </Link>
+          <FooterLink link="https://t.me/stakenetapp" text="Telegram" />
+          <FooterLink
+            link="https://instagram.com/stakenetapp"
+            text="Instagram"
+          />
+          <FooterLink link="https://twitter.com/stakenetapp" text="Twitter" />
         </div>
       </div>
       <Curve />

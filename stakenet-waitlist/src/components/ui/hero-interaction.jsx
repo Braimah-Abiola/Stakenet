@@ -10,7 +10,7 @@ const HeroInteraction = () => {
 
     const calculateRootMargin = () => {
       const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-      return `-${vw * 0.15}px`; // Adjust the multiplier (0.25) as needed
+      return `-${vw * 0.18}px`; // Adjust the multiplier (0.25) as needed
     };
 
     const options = {
